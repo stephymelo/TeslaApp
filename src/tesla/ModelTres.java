@@ -5,7 +5,7 @@ import processing.core.PImage;
 
 public class ModelTres extends Tesla {
 	
-	private PImage modelThree,bg;
+	private PImage modelThree;
 	private String description;
 	private int range;
 	private int seats;
@@ -16,7 +16,7 @@ public class ModelTres extends Tesla {
 		super(app,posX, posY);
 		
 		this.modelThree=app.loadImage("assets/modelThreeC.png");
-		this.bg=app.loadImage("assets/modelThreeMockup.png");
+		
 		this.posX=posX;
 		this.posY=posY;
 		this.description="Unparelled acceleration and performace";
@@ -34,7 +34,7 @@ public class ModelTres extends Tesla {
 	public void drawModelCar() {
 		
 		
-//		app.image(bg,0,0);
+
 		app.image(modelThree,posX,posY,325,220);
 		
 		
@@ -54,6 +54,22 @@ public class ModelTres extends Tesla {
 
 	public void setModel(String model) {
 		this.model = model;
+	}
+
+
+
+
+
+	public int getRange() {
+		return range;
+	}
+
+
+
+
+
+	public void setRange(int range) {
+		this.range = range;
 	}
 
 

@@ -6,7 +6,7 @@ import processing.core.PImage;
 public class ModelS extends Tesla {
 	
 	
-	private PImage modelS,bg;
+	private PImage modelS;
 	private int range;
 	private int seats;
 	private int safety;
@@ -20,7 +20,7 @@ public class ModelS extends Tesla {
 		// TODO Auto-generated constructor stub
 		
 		this.modelS=app.loadImage("assets/modelS.png");
-		this.bg=app.loadImage("assets/modelMockup.png");
+		
 		this.description="Best performance in all weather conditions";
 		this.seats=5;
 		this.range=322;
@@ -39,11 +39,10 @@ public class ModelS extends Tesla {
 	
 	
 	public void drawModelCar() {
-		
-//		app.image(bg,0,0);
+
 		
 		app.image(modelS,posX,posY,450,300);
-		//informacion
+	
 		
 		
 		
