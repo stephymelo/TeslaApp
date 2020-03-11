@@ -120,10 +120,7 @@ public class Main extends PApplet {
 		}
 
 		for (int i = 0; i < tarjetaCreditoInput.length; i++) {
-//
-//			cp5.addTextfield(tarjetaCreditoInput[i]).setPosition(50, 200 + (i * 70)).setSize(200, 30).setAutoClear(true)
-//					.setColorValue(color(0)).setColorBackground(color(0, 0, 0, 1)).setFont(font)
-//					.setColorActive(color(0, 0, 0,1)).setColorForeground(color(255, 0, 0)).getCaptionLabel().hide();
+
 
 		
 			

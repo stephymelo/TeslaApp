@@ -62,6 +62,38 @@ public class ModelX extends Tesla {
 
 
 
+	public PImage getModelX() {
+		return modelX;
+	}
+
+
+
+
+
+	public void setModelX(PImage modelX) {
+		this.modelX = modelX;
+	}
+
+
+
+
+
+	public int getRange() {
+		return range;
+	}
+
+
+
+
+
+	public void setRange(int range) {
+		this.range = range;
+	}
+
+
+
+
+
 	public String getDescription() {
 		return description;
 	}
