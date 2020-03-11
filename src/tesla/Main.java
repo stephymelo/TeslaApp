@@ -43,7 +43,7 @@ public class Main extends PApplet {
 			passwordBoolean, emailBoolean, confirmEmailBoolean,logIn,yaRegistro,registroTarjetaB;
 
 	// Pantallas
-	PImage loginFoto, registrationFoto, mainPage, buyModelX, buyModelY, buyModelS, buyModelTres;
+	PImage loginFoto, registrationFoto, mainPage, buyModelX, buyModelY, buyModelS, buyModelTres,modS,modThree,modY,modX;
 	
 	PImage compareImage[];
 	// botones
@@ -207,6 +207,11 @@ public class Main extends PApplet {
 		buyModelY = loadImage("assets/buyModelY.png");
 		buyModelS = loadImage("assets/buyModelS.png");
 		buyModelTres = loadImage("assets/buyModelThree.png");
+		
+		modS = loadImage("assets/modelSOrder.png");
+		modThree = loadImage("assets/modelThreeOrder.png");
+		modX = loadImage("assets/modelXOrder.png");
+		modY = loadImage("assets/modelYOrder.png");
 
 		raleway = createFont("assets/Raleway-Regular.ttf", 14);
 		ralewayBold = createFont("assets/Raleway-SemiBold.ttf", 30);
@@ -296,24 +301,28 @@ public class Main extends PApplet {
 			case 0:
 
 				tarModelS.drawScreenTarjeta();
+				image(modS,15,120);
 				text("Model S", 240, 123);
 				text(modelS.getPrice(), 240, 158);
 
 				break;
 			case 1:
 				tarModelTres.drawScreenTarjeta();
+				image(modThree,50,110);
 				text("Model 3", 240, 123);
 				text(modelTres.getPrice(), 240, 158);
 
 				break;
 			case 2:
 				tarModelY.drawScreenTarjeta();
+				image(modY,40,120);
 				text("Model Y", 240, 123);
 				text(modelY.getPrice(), 240, 158);
 
 				break;
 			case 3:
 				tarModelX.drawScreenTarjeta();
+				image(modX,40,120);
 				text("Model X", 240, 123);
 				text(modelX.getPrice(), 240, 158);
 
