@@ -5,7 +5,7 @@ import processing.core.PImage;
 
 public class ModelX extends Tesla {
 	
-	private PImage modelX,bg;
+	private PImage modelX;
 	private String description;
 	private int range;
 	private int seats;
@@ -19,7 +19,7 @@ public class ModelX extends Tesla {
 		
 		this.modelX=app.loadImage("assets/modelX.png");
 
-		this.bg=app.loadImage("assets/modelXMockup.png");
+		
 		this.posX=posX;
 		this.posY=posY;
 		this.description="Safest and best storage in SUV";
